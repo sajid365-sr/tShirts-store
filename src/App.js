@@ -1,6 +1,7 @@
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Grandpa from './components/Grandpa/Grandpa';
 import Home from './components/Home/Home';
 import Orders from './components/Orders/Orders';
 import Main from './Layouts/Main';
@@ -19,6 +20,11 @@ function App() {
         },
         {
           path:'/home',
+          loader: () => fetch('tShirts.json'),
+          element:<Home></Home>
+        },
+        {
+          path:'/home',
           element:<Home></Home>
         },
         {
@@ -28,6 +34,10 @@ function App() {
         {
           path:'*',
           element:<div>Not found the Route</div>
+        },
+        {
+          path:'/grandpa',
+          element:<Grandpa></Grandpa>
         }
       ]
     }
