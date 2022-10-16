@@ -17,4 +17,6 @@ Basic Router Setup:
 Context API:
 
 1. Declare a context.
-2. Set provider.
+2. Set provider with value.
+3. "useContext" in the place where you want to get the context.
+4. 
