@@ -8,8 +8,8 @@ const Aunt = ({house}) => {
             <h4>Aunt</h4>
             <p><small>House: {house}</small></p>
             <section className='flex'>
-                <Cousin></Cousin>
-                <Cousin></Cousin>
+                <Cousin house={house}></Cousin>
+                <Cousin house={house}></Cousin>
             </section>
         </div>
     );

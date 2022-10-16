@@ -13,3 +13,8 @@ Basic Router Setup:
 9. 
 
 */
+
+Context API:
+
+1. Declare a context.
+2. Set provider.
